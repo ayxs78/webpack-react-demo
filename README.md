@@ -22,3 +22,8 @@
 1.[Tutorial: How to set up React, webpack 4, and Babel 7 (2018)](https://www.valentinog.com/blog/react-webpack-babel/)  
 2.[Webpack 4 Tutorial: from 0 Conf to Production Mode](https://www.valentinog.com/blog/webpack-tutorial/)  
 3.[React + Webpack 4 + Babel 7 Setup Tutorial](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)  
+
+//顺便记录一下这次使用git的坑  
+git add . 报错Filename too long  
+原因：git有可以创建4096长度的文件名，然而在windows最多是260，因为git用了旧版本的windows api  
+解决方案：git config --global core.longpaths true  
